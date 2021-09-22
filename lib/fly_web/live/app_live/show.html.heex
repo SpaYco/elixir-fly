@@ -234,7 +234,7 @@
                                       Hostname
                                     </th>
                                     <td class="px-6 py-4 break-words text-sm text-blue-500 underline">
-                                      <%= link(@app["hostname"], to: URI.parse(@app["hostname"])) %>
+                                      <%= link(@app["hostname"], to: URI.parse("https://#{@app["hostname"]}")) %>
                                     </td>
                                   </tr>
                               </tbody>
