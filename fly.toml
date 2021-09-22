@@ -1,13 +1,13 @@
-# fly.toml file generated for flyio-ui-ex on 2021-08-26T16:42:20-05:00
+# fly.toml file generated for long-smoke-5998 on 2021-09-22T17:20:05+01:00
 
-app = "flyio-ui-ex"
+app = "long-smoke-5998"
 
 kill_signal = "SIGTERM"
 kill_timeout = 5
 processes = []
 
 [env]
-auto_rollback = false
+  auto_rollback = false
 
 [experimental]
   allowed_public_ports = []
@@ -34,7 +34,7 @@ auto_rollback = false
     port = 443
 
   [[services.tcp_checks]]
-    grace_period = "1s"
+    grace_period = "30s"
     interval = "15s"
     restart_limit = 6
     timeout = "2s"
