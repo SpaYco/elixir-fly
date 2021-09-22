@@ -1,6 +1,6 @@
-# fly.toml file generated for long-smoke-5998 on 2021-09-22T17:20:05+01:00
+# fly.toml file generated for empty-darkness-6264 on 2021-09-22T18:52:59+01:00
 
-app = "long-smoke-5998"
+app = "empty-darkness-6264"
 
 kill_signal = "SIGTERM"
 kill_timeout = 5
@@ -15,7 +15,7 @@ processes = []
 
 [[services]]
   http_checks = []
-  internal_port = 4000
+  internal_port = 8080
   processes = ["app"]
   protocol = "tcp"
   script_checks = []
