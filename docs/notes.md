@@ -13,6 +13,7 @@ I'm super excited to work on Elixir more and discover all of its capabilities.
 
 - I would spend more time on the mobile experience, while tailwind-made tables are still readable on mobile, they can be improved!
 - I would update the Instances table to always show the ID on the left, and for the rest of the columns to be scrollable, because (while I haven't used fly.io much) I'm confident that's what they would use most of the time when they find what they need in the table!
+- Add tests
 
 ## how you'd determine if this feature is successful
 
