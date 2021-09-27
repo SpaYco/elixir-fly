@@ -217,7 +217,7 @@
                                     <th scope="col" class="bg-gray-50 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                       Version
                                     </th>
-                                    <td class="px-6 py-4 break-words text-sm text-gray-500">
+                                    <td class="px-6 py-4 break-words text-sm font-medium text-gray-900">
                                       <%= @app["version"] %>
                                     </td>
                                     </tr>
@@ -285,7 +285,7 @@
                                     <th scope="col" class="bg-gray-50 px-6 py-3 text-left text-xs font-medium  text-gray-500 uppercase tracking-wider">
                                       Status
                                     </th>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                       <%= ds["status"] %>
                                     </td>
                                     </tr>
@@ -293,7 +293,7 @@
                                     <th scope="col" class="bg-gray-50 px-6 py-3 text-left text-xs font-medium  text-gray-500 uppercase tracking-wider">
                                       Description
                                     </th>
-                                    <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                    <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">
                                       <%= ds["description"] %>
                                     </td>
                                     </tr>
@@ -319,10 +319,10 @@
                                         </thead>
                                         <tbody> 
                                         <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm border-r border-gray-200 text-gray-500">  <%= ds["desiredCount"] %>  </td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm border-r border-gray-200 text-gray-500"> <%= ds["placedCount"] %>  </td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm border-r border-gray-200 text-gray-500"> <%= ds["healthyCount"] %>  </td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500"> <%= ds["unhealthyCount"] %>  </td>
+                                        <td class="px-6 py-4 whitespace-nowrap font-medium text-sm border-r border-gray-200 text-gray-900">  <%= ds["desiredCount"] %>  </td>
+                                        <td class="px-6 py-4 whitespace-nowrap font-medium text-sm border-r border-gray-200 text-gray-900"> <%= ds["placedCount"] %>  </td>
+                                        <td class="px-6 py-4 whitespace-nowrap font-medium text-sm border-r border-gray-200 text-gray-900"> <%= ds["healthyCount"] %>  </td>
+                                        <td class="px-6 py-4 whitespace-nowrap font-medium text-sm text-gray-900"> <%= ds["unhealthyCount"] %>  </td>
                                         </tr>
                                         </tbody>
                                       </table>
