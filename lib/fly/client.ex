@@ -180,12 +180,15 @@ defmodule Fly.Client do
         app(name: $name) {
           id
           name
+          hostname
           organization {
             id
             slug
+            name
           }
           deployed
           status
+          version
           processGroups {
             name
             regions
@@ -196,7 +199,7 @@ defmodule Fly.Client do
               memoryMb
             }
           }
-          releases(last: 5) {
+          releases(first: 5) {
             totalCount
             nodes {
               version
@@ -208,6 +211,42 @@ defmodule Fly.Client do
                 name
                 avatarUrl
               }
+            }
+          }
+          deploymentStatus {
+            id
+            status
+            version
+            description
+            placedCount
+            promoted
+            desiredCount
+            healthyCount
+            unhealthyCount
+          }
+          allocations {
+            id
+            idShort
+            version
+            latestVersion
+            status
+            desiredStatus
+            totalCheckCount
+            passingCheckCount
+            warningCheckCount
+            criticalCheckCount
+            createdAt
+            updatedAt
+            canary
+            region
+            restarts
+            healthy
+            privateIP
+            taskName
+            checks {
+              status
+              output
+              name
             }
           }
         }

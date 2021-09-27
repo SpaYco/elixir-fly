@@ -70,6 +70,6 @@ COPY --from=build --chown=nobody:nobody /app/_build/prod/rel/fly ./
 ENV HOME=/app
 ENV MIX_ENV=prod
 ENV SECRET_KEY_BASE=nokey
-ENV PORT=4000
+ENV PORT=8080
 
 CMD ["bin/fly", "start"]
